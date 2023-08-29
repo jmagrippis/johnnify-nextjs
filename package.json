@@ -43,6 +43,9 @@
     "supabase": "^1.88.0",
     "typescript": "^5.2.2"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "volta": {
     "node": "18.17.1"
   }

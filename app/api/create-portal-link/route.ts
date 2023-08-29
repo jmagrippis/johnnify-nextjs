@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     } catch (err: unknown) {
       console.log(err)
       return new Response(
-        JSON.stringify({error: {statusCode: 500, message: err.message}}),
+        JSON.stringify({error: {statusCode: 500, message: err instanceof Error ? err.message : 'Error creating billing session'}}),
         {
           status: 500,
         },
