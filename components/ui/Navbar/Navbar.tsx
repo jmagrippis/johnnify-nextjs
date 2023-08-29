@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import { createServerSupabaseClient } from '@/app/supabase-server';
+import Link from 'next/link'
+import {createServerSupabaseClient} from '@/app/supabase-server'
 
-import Logo from '@/components/icons/Logo';
-import SignOutButton from './SignOutButton';
+import Logo from '@/components/icons/Logo'
+import SignOutButton from './SignOutButton'
 
-import s from './Navbar.module.css';
+import s from './Navbar.module.css'
 
 export default async function Navbar() {
-  const supabase = createServerSupabaseClient();
+  const supabase = createServerSupabaseClient()
   const {
-    data: { user }
-  } = await supabase.auth.getUser();
+    data: {user},
+  } = await supabase.auth.getUser()
 
   return (
     <nav className={s.root}>
@@ -46,5 +46,5 @@ export default async function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
