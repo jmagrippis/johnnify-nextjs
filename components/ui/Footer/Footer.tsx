@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import Logo from '@/components/icons/Logo';
-import GitHub from '@/components/icons/GitHub';
+import Logo from '@/components/icons/Logo'
+import GitHub from '@/components/icons/GitHub'
 
 export default function Footer() {
   return (
@@ -97,16 +97,10 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex items-center">
-          <span className="text-white">Crafted by</span>
-          <a href="https://vercel.com" aria-label="Vercel.com Link">
-            <img
-              src="/vercel.svg"
-              alt="Vercel.com Logo"
-              className="inline-block h-6 ml-4 text-white"
-            />
-          </a>
+          <span className="text-white">Made with 💜 by</span>
+          <a href="https://magrippis.com">jmagrippis</a>
         </div>
       </div>
     </footer>
-  );
+  )
 }

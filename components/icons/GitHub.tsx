@@ -1,4 +1,4 @@
-const GitHub = ({ ...props }) => {
+const GitHub = () => {
   return (
     <svg
       width="24"
@@ -14,7 +14,7 @@ const GitHub = ({ ...props }) => {
         fill="currentColor"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default GitHub;
+export default GitHub
